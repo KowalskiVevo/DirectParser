@@ -9,11 +9,3 @@ w
 Gsrc/main/java/urfu/example/yandexdirect/service/ParsingDataService.java,4\a\4a2e6edeb6cbdd7f52c92440505b79a002521892
 u
 Esrc/main/java/urfu/example/yandexdirect/feign/YandexDirectClient.java,e\4\e4b9939804ed67d649b9da2a6e3097f5ef216996
-l
-<src/main/java/urfu/example/yandexdirect/dto/ResponseDto.java,7\7\778be62a3eadcaaf6e102b02e0e6216fe95ef971
-}
-Msrc/main/java/urfu/example/yandexdirect/controller/ParsingDataController.java,6\0\60d891d56abe7ebec11737a457a60e07035527e4
-s
-Csrc/main/java/urfu/example/yandexdirect/dto/CampaignsYandexDto.java,f\4\f4fd78a9c57438e3aa09b662c994533c268743c9
-o
-?src/main/java/urfu/example/yandexdirect/util/ConstantValue.java,3\2\324388687d8e8ccf3e89a1f807d6a769fff562ae
