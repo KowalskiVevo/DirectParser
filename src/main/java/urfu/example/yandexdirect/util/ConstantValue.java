@@ -43,11 +43,12 @@ public class ConstantValue {
                 .filter(month -> str.replaceAll("(весь|до конца) ", "").matches(month)).toList().get(0)) + 1
         ).atEndOfMonth());
     FUNCTION_PARSING.put(
-        Pattern.compile("(до \\d{2}" + pattern + ")"),
+        Pattern.compile("(до \\d{2} " + pattern + ")"),
         (String str) -> LocalDate.of(
             LocalDate.now().getYear(),
-            SORTED_MONTHS.indexOf(SORTED_MONTHS.stream().filter(str::matches).toList().get(0)) + 1,
-            Integer.parseInt(str.replaceAll("до ","").replaceAll(pattern,""))
+            SORTED_MONTHS.indexOf(SORTED_MONTHS.stream()
+                .filter(month -> str.replaceAll("до \\d{2} ", "").matches(month)).toList().get(0)) + 1,
+            Integer.parseInt(str.replaceAll("до ","").replaceAll(" " + pattern,""))
         ));
     FUNCTION_PARSING.put(
         Pattern.compile("(до \\d{2}.\\d{2})"),
