@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import urfu.example.yandexdirect.service.ParsingDataService;
 
 @Controller
@@ -15,6 +16,6 @@ public class FrontController {
   @GetMapping("/")
   public String mainPage(Model model){
     model.addAttribute("responses", parsingDataService.findAllAds());
-    return "opa";
+    return "markers";
   }
 }

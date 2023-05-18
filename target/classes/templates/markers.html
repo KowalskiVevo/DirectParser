@@ -32,12 +32,14 @@
     <div class="tabletext">
         <table>
             <tr>
+                <th>ФИО пользователя</th>
                 <th>ID объявления</th>
-                <th> ID компании</th>
+                <th>ID компании</th>
                 <th>Промоакция</th>
                 <th>Дата окончания</th>
             </tr> <!--ряд с ячейками заголовков-->
             <tr th:each="response : ${responses}">
+                <td th:text="${response.getFio()}">данные</td>
                 <td th:text="${response.getId}">данные</td>
                 <td th:text="${response.getCampaignId}">данные</td>
                 <td th:text="${response.getAds}">данные</td>

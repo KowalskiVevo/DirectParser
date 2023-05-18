@@ -5,16 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseDto {
-  private Long id;
-  private Long campaignId;
-  private String ads;
-  private LocalDate dateEnd;
+public class UserDto {
+  private Long userId;
+  private String token;
+  private String login;
+  private String password;
   private String fio;
 }

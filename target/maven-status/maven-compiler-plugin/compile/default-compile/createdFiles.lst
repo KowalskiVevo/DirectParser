@@ -1,0 +1,14 @@
+urfu\example\yandexdirect\service\ParsingDataService.class
+urfu\example\yandexdirect\schedule\ParsingDataSchedule.class
+urfu\example\yandexdirect\dto\ResponseDto$ResponseDtoBuilder.class
+urfu\example\yandexdirect\controller\FrontController.class
+urfu\example\yandexdirect\dto\CampaignsYandexDto$Result$Campaigns.class
+urfu\example\yandexdirect\dto\CampaignsYandexDto$Result.class
+urfu\example\yandexdirect\controller\ParsingDataController.class
+urfu\example\yandexdirect\feign\YandexDirectClient.class
+urfu\example\yandexdirect\dto\CampaignsYandexDto.class
+urfu\example\yandexdirect\dto\ResponseDto.class
+urfu\example\yandexdirect\util\ConstantValue.class
+urfu\example\yandexdirect\dto\CampaignsYandexDto$Result$Ads$TextAd.class
+urfu\example\yandexdirect\dto\CampaignsYandexDto$Result$Ads.class
+urfu\example\yandexdirect\YandexDirectApplication.class

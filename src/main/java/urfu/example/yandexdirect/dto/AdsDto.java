@@ -11,10 +11,10 @@ import java.time.LocalDate;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseDto {
-  private Long id;
+public class AdsDto {
+  private Long adsId;
+  private String adsContent;
   private Long campaignId;
-  private String ads;
   private LocalDate dateEnd;
-  private String fio;
+  private Long userId;
 }
