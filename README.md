@@ -1,5 +1,1 @@
 ![alt text](https://memepedia.ru/wp-content/uploads/2023/05/rajan-gosling-mem-mne-poebat.jpg)
-![alt text](https://memepedia.ru/wp-content/uploads/2023/05/da-poebat-mne-gosling-11.jpg)
-![alt text](https://memepedia.ru/wp-content/uploads/2023/05/da-poebat-mne-gosling-4.jpg)
-![alt text](https://memepedia.ru/wp-content/uploads/2023/05/da-poebat-mne-gosling-2.jpg)
-![alt text](https://memepedia.ru/wp-content/uploads/2023/05/da-poebat-mne-gosling-10.jpg)
