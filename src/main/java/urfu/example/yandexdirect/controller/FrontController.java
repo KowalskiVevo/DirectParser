@@ -1,5 +1,6 @@
 package urfu.example.yandexdirect.controller;
 
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +10,7 @@ import urfu.example.yandexdirect.service.ParsingDataService;
 
 @Controller
 @RequiredArgsConstructor
+@Api(tags = "Контроллер главной страницы")
 public class FrontController {
 
   private final ParsingDataService parsingDataService;

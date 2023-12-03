@@ -26,9 +26,6 @@ import java.util.stream.Stream;
 @RequiredArgsConstructor
 public class ParsingDataService {
 
-//  @Value("${app.parsing.token}")
-//  private String token;
-
   private final YandexDirectClient yandexDirectClient;
   private final UserRepository userRepository;
   private final AdsRepository adsRepository;
@@ -36,6 +33,18 @@ public class ParsingDataService {
 
   public List<ResponseDto> findAllAds() {
     return adsRepository.findAll().stream().map(ads -> ResponseDto.builder()
+            .id(ads.getAdsId())
+            .campaignId(ads.getCampaignId())
+            .ads(ads.getAdsContent())
+            .dateEnd(ads.getDateEnd())
+            .fio(ads.getUser().getFio())
+            .build())
+        .sorted(Comparator.comparing(ResponseDto::getDateEnd))
+        .toList();
+  }
+
+  public List<ResponseDto> findAdsByUsers(List<Long> userIds){
+    return adsRepository.findByUserIds(userIds).stream().map(ads -> ResponseDto.builder()
             .id(ads.getAdsId())
             .campaignId(ads.getCampaignId())
             .ads(ads.getAdsContent())
