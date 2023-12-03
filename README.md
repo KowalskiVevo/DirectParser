@@ -4,11 +4,11 @@
 Сервис для парсинга рекламный акций с Яндекс.Директ.
 
 # Запуск сервиса
-Docker из корневой папки проекта: 
+Через Docker из корневой папки проекта: 
 - docker build -t yandex_parser .
 - docker run -dp 8081:8081 yandex_parser
 
-Java + Maven:
+Либо с помощью Java + Maven:
 - Сборка: mvn clean install
 - Запуск: mvn spring-boot:run
 
