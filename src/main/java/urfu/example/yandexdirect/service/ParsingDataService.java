@@ -1,9 +1,7 @@
 package urfu.example.yandexdirect.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 import urfu.example.yandexdirect.dto.CampaignsYandexDto;
 import urfu.example.yandexdirect.dto.ResponseDto;
 import urfu.example.yandexdirect.feign.YandexDirectClient;
@@ -20,7 +18,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Stream;
 
 @Service
 @RequiredArgsConstructor

@@ -29,4 +29,10 @@ public class UserController {
   public ResponseEntity<UserDto> deleteUser(@RequestBody UserDto userDto) {
     return ResponseEntity.ok(userService.deleteUser(userDto));
   }
+
+  @PutMapping("/edit")
+  @ApiOperation(value = "Редактирование юзера")
+  public ResponseEntity<UserDto> editUser(@RequestBody UserDto userDto) {
+    return ResponseEntity.ok(userService.saveUser(userDto));
+  }
 }
