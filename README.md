@@ -12,10 +12,10 @@ Java + Maven:
 - Сборка: mvn clean install
 - Запуск: mvn spring-boot:run
 
-URL сервиса: http://localhost:8080
+URL сервиса: http://localhost:8081
 
 # Swagger-UI
-URL сваггера: http://localhost:8080/swagger-ui/index.html
+URL сваггера: http://localhost:8081/swagger-ui/index.html
 
 # H2
 Сервис сохраняет распарсенные акции в легковесную БД H2. 
